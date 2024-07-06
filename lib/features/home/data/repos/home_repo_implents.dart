@@ -25,11 +25,11 @@ try{
 }}}
 
       List<AllRepositoriesModel> allRepositories(data) {
-        List<AllRepositoriesModel> categories=[];
-        for(var allCategoriesMap in data){
-         categories.add(AllRepositoriesModel.fromJson(allCategoriesMap));
+        List<AllRepositoriesModel> repositories=[];
+        for(var allRepositoriesMap in data){
+         repositories.add(AllRepositoriesModel.fromJson(allRepositoriesMap));
         }
-        return categories;
+        return repositories;
       }
 
 
